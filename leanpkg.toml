@@ -1,0 +1,8 @@
+[package]
+name = "fonaments"
+version = "0.1"
+lean_version = "leanprover-community/lean:3.33.0"
+path = "src"
+
+[dependencies]
+mathlib = {git = "https://github.com/leanprover-community/mathlib", rev = "5dfb76f501099e26d423048e9f81e5fbf01b5593"}
