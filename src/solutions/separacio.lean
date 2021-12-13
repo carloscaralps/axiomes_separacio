@@ -117,7 +117,10 @@ variables (f : filter X) (x : X)
 
 def filter_lim (f : filter X) (x : X) := f ≤ 𝓝 x ∧ f ≠ ⊥
 
-lemma t2_iff_unicity : t2_space X ↔ ∀ (x y : X) (f : filter X) (hx : filter_lim f x) (hy : filter_lim f y), x=y :=
+def limit_unicity (X : Type) [topological_space X] [nonempty X] := 
+      ∀ (x y : X) (f : filter X) (hx : filter_lim f x) (hy : filter_lim f y), x=y
+
+lemma t2_iff_unicity : t2_space X ↔ limit_unicity X :=
 begin
   --sorry
   split,
