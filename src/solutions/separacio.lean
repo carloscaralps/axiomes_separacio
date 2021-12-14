@@ -165,6 +165,6 @@ begin
       intros T hT,
       exact mem_inf_of_right hT },
     exact hxy (h1 x y (𝓝 x ⊓ 𝓝 y) ⟨hx, this⟩ ⟨hy, this⟩),
-  }
+  } 
   --sorry
 end
